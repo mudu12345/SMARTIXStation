@@ -47,3 +47,13 @@ Umma University
 
 ## Purpose
 Academic project developed for learning and demonstrating software development skills.
+
+## Download Project
+
+Click the link below to download the complete source code:
+
+[Download SMARTIXStation (ZIP)](https://github.com/mudu12345/SMARTIXStation/archive/refs/heads/main.zip)
+
+## Repository
+
+[View SMARTIXStation on GitHub](https://github.com/mudu12345/SMARTIXStation)
