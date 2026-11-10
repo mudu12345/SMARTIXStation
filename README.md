@@ -1,59 +1,101 @@
-# SMARTIXStation
-### Stationery Supplies Management System
 
-## Project Description
-SMARTIXStation is a desktop-based Stationery Supplies Management System developed using C# and Windows Forms in Visual Studio 2022.
+# 🏪 SMARTIXStation – Stationery Supplies Management System
 
-The system is designed to simplify and improve the management of stationery shop operations, including product registration, customer management, sales processing, inventory tracking and report generation.
+## 📌 About the Project
 
-## Technologies Used
-- Programming Language: C#
-- Framework: .NET Windows Forms
-- IDE: Visual Studio 2022
-- Version Control: Git and GitHub
+SMARTIXStation is a Windows-based Stationery Supplies Management System developed using C# and Windows Forms. The system helps stationery businesses manage products, customers, sales, inventory, and business reports efficiently.
 
-## Project Features
+It provides a simple and user-friendly interface for managing daily stationery shop operations.
 
-### Implemented / In Progress
-- Login Interface
+## ✨ Features
+
+- 🔐 **Login System** – Secure access to the application.
+- 📦 **Product Management** – Register, update, search, and delete products.
+- 👥 **Customer Management** – Manage customer information.
+- 🛒 **Sales Management** – Record and manage sales transactions.
+- 📊 **Inventory Management** – Monitor available stock and low-stock items.
+- 📈 **Reports** – View business and sales reports.
+- ⚙️ **Settings** – Manage application login credentials.
+- 🏠 **Dashboard** – Easy navigation between system modules.
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| C# | Main programming language |
+| Windows Forms | Graphical User Interface |
+| .NET 10 | Application framework |
+| Visual Studio 2022 | Development environment |
+| CSV Files | Data storage |
+
+## 🖥️ Application Screens
+
+The application includes the following screens:
+
+- Login Screen
 - Dashboard
 - Product Registration
-- Product Management
-- Inventory Management
-
-### Pending Development
 - Customer Management
 - Sales Management
-- Reports Generation
-- System Settings
+- Inventory Management
+- Reports
+- Settings
 
-## Project Status
-🚧 INCOMPLETE – UNDER DEVELOPMENT
+## 📥 Download SMARTIXStation
 
-This project is currently under development.
-Some modules have been implemented, while other features are still being developed and tested.
+Download the Windows installer from the latest GitHub Release:
 
-## How to Download
-1. Open the GitHub repository.
-2. Click the green Code button.
-3. Select Download ZIP.
-4. Extract the downloaded folder.
+👉 [Download SMARTIXStation for Windows](https://github.com/mudu12345/SMARTIXStation/releases/latest)
 
-## Developer
-Mohamud Mohamed
+**Note:** The Windows installer will be available after the first release is published.
 
-## Institution
-Umma University
+## 🚀 How to Run
 
-## Purpose
-Academic project developed for learning and demonstrating software development skills.
+1. Download the SMARTIXStation Windows installer from the Releases section.
+2. Run the installer.
+3. Follow the installation instructions.
+4. Open SMARTIXStation from the Windows Start Menu or desktop shortcut.
+5. Log in to access the system.
 
-## Download Project
+## 📂 Project Structure
 
-Click the link below to download the complete source code:
+```text
+SMARTIXStation/
+│
+├── Forms/
+│   ├── LoginForm.cs
+│   ├── DashboardForm.cs
+│   ├── ProductsForm.cs
+│   ├── CustomersForm.cs
+│   ├── SalesForm.cs
+│   ├── InventoryForm.cs
+│   ├── ReportsForm.cs
+│   └── SettingsForm.cs
+│
+├── LoginCredentials.cs
+├── Program.cs
+├── .gitignore
+└── README.md
+```
 
-[Download SMARTIXStation (ZIP)](https://github.com/mudu12345/SMARTIXStation/archive/refs/heads/main.zip)
+## 🎯 Learning Objectives
 
-## Repository
+- Understanding C# Windows Forms development.
+- Designing user-friendly desktop applications.
+- Implementing CRUD operations.
+- Managing inventory and sales records.
+- Working with CSV file storage.
+- Understanding application navigation and authentication.
 
-[View SMARTIXStation on GitHub](https://github.com/mudu12345/SMARTIXStation)
+## 👨‍💻 Author
+
+**Mohamud Mohamed**
+
+GitHub: [@mudu12345](https://github.com/mudu12345)
+
+## 🔗 Project Repository
+
+[SMARTIXStation – GitHub Repository](https://github.com/mudu12345/SMARTIXStation)
+
+---
+⭐ If you find this project useful, consider giving it a star!
