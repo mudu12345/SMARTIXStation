@@ -19,7 +19,8 @@ namespace WinFormsApp1
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
             }
-            else if (username == "admin" && password == "admin123")
+            else if (username == LoginCredentials.GetUsername() &&
+         password == LoginCredentials.GetPassword())
             {
                 MessageBox.Show("Login successful!",
     "SMARTIXStation",

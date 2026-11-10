@@ -38,6 +38,9 @@
             colInvSupplier = new DataGridViewTextBoxColumn();
             btnRefreshInventory = new Button();
             lblInventorySummary = new Label();
+            colInvStockStatus = new DataGridViewTextBoxColumn();
+            txtSearchInventory = new TextBox();
+            btnSearchInventory = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvInventory).BeginInit();
             SuspendLayout();
             // 
@@ -59,8 +62,8 @@
             dgvInventory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvInventory.BackgroundColor = Color.White;
             dgvInventory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvInventory.Columns.AddRange(new DataGridViewColumn[] { colInvProductID, colInvProductName, colInvCategory, colInvUnitPrice, colInvQuantity, colInvSupplier });
-            dgvInventory.Location = new Point(30, 82);
+            dgvInventory.Columns.AddRange(new DataGridViewColumn[] { colInvProductID, colInvProductName, colInvCategory, colInvUnitPrice, colInvQuantity, colInvSupplier, colInvStockStatus });
+            dgvInventory.Location = new Point(12, 116);
             dgvInventory.Name = "dgvInventory";
             dgvInventory.ReadOnly = true;
             dgvInventory.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -108,12 +111,13 @@
             btnRefreshInventory.BackColor = Color.Cyan;
             btnRefreshInventory.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRefreshInventory.ForeColor = Color.White;
-            btnRefreshInventory.Location = new Point(101, 292);
+            btnRefreshInventory.Location = new Point(106, 324);
             btnRefreshInventory.Name = "btnRefreshInventory";
             btnRefreshInventory.Size = new Size(150, 40);
             btnRefreshInventory.TabIndex = 2;
             btnRefreshInventory.Text = "Refresh Inventory";
             btnRefreshInventory.UseVisualStyleBackColor = false;
+           
             // 
             // lblInventorySummary
             // 
@@ -121,17 +125,42 @@
             lblInventorySummary.BackColor = Color.Blue;
             lblInventorySummary.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblInventorySummary.ForeColor = Color.White;
-            lblInventorySummary.Location = new Point(428, 298);
+            lblInventorySummary.Location = new Point(422, 336);
             lblInventorySummary.Name = "lblInventorySummary";
             lblInventorySummary.Size = new Size(112, 17);
             lblInventorySummary.TabIndex = 3;
             lblInventorySummary.Text = "Total Products: 0";
+            // 
+            // colInvStockStatus
+            // 
+            colInvStockStatus.HeaderText = "Stock Status";
+            colInvStockStatus.Name = "colInvStockStatus";
+            colInvStockStatus.ReadOnly = true;
+            // 
+            // txtSearchInventory
+            // 
+            txtSearchInventory.Location = new Point(30, 70);
+            txtSearchInventory.Name = "txtSearchInventory";
+            txtSearchInventory.PlaceholderText = "Search product...";
+            txtSearchInventory.Size = new Size(250, 23);
+            txtSearchInventory.TabIndex = 4;
+            // 
+            // btnSearchInventory
+            // 
+            btnSearchInventory.Location = new Point(290, 70);
+            btnSearchInventory.Name = "btnSearchInventory";
+            btnSearchInventory.Size = new Size(90, 30);
+            btnSearchInventory.TabIndex = 5;
+            btnSearchInventory.Text = "Search";
+            btnSearchInventory.UseVisualStyleBackColor = true;
             // 
             // InventoryForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSearchInventory);
+            Controls.Add(txtSearchInventory);
             Controls.Add(lblInventorySummary);
             Controls.Add(btnRefreshInventory);
             Controls.Add(dgvInventory);
@@ -158,5 +187,8 @@
         private DataGridViewTextBoxColumn colInvSupplier;
         private Button btnRefreshInventory;
         private Label lblInventorySummary;
+        private DataGridViewTextBoxColumn colInvStockStatus;
+        private TextBox txtSearchInventory;
+        private Button btnSearchInventory;
     }
 }

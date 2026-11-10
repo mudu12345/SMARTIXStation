@@ -1,0 +1,9 @@
+﻿.vs/
+bin/
+obj/
+*.user
+*.csv
+*.dll
+*.exe
+*.pdb
+LoginCredentials.txt

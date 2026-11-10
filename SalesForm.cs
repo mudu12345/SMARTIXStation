@@ -147,10 +147,15 @@ namespace WinFormsApp1
             );
             SaveSalesToFile();
 
+            UpdateProductStock(product.Name, quantity);
+
+            LoadProducts();
+
             MessageBox.Show("Sale completed successfully!");
 
             btnClearSale_Click(sender, e);
          }
+
         private void SaveSalesToFile()
         {
             using (StreamWriter writer = new StreamWriter(salesFilePath, false))
@@ -193,6 +198,33 @@ namespace WinFormsApp1
                     dgvSales.Rows.Add(values);
                 }
             }
+        }
+        private void UpdateProductStock(string productName, int soldQuantity)
+        {
+            if (!File.Exists(productsFilePath))
+            {
+                MessageBox.Show("Products file not found!");
+                return;
+            }
+
+            string[] lines = File.ReadAllLines(productsFilePath);
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                string[] values = lines[i].Split(',');
+
+                if (values.Length == 6 &&
+                    values[1] == productName &&
+                    int.TryParse(values[4], out int currentStock))
+                {
+                    values[4] = (currentStock - soldQuantity).ToString();
+
+                    lines[i] = string.Join(",", values);
+                    break;
+                }
+            }
+
+            File.WriteAllLines(productsFilePath, lines);
         }
     }
  }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,9 @@ namespace WinFormsApp1
             InitializeComponent();
 
             btnCustomers.Click += btnCustomers_Click;
+            btnSettings.Click += btnSettings_Click;
         }
+
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             CustomersForm customers = new CustomersForm();
@@ -24,12 +27,10 @@ namespace WinFormsApp1
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void lblAppName_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnSales_Click(object sender, EventArgs e)
@@ -40,22 +41,20 @@ namespace WinFormsApp1
 
         private void pnlMain_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void pnlStockCard_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
-        private void dgvRecentActivities_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvRecentActivities_CellContentClick(
+            object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
-        private void dgvRecentActivities_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        private void dgvRecentActivities_CellContentClick_1(
+            object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
         private void btnLongout_Click(object sender, EventArgs e)
@@ -72,6 +71,24 @@ namespace WinFormsApp1
 
             ProductsForm products = new ProductsForm();
             products.ShowDialog();
+        }
+
+        private void btnInventory_Click(object sender, EventArgs e)
+        {
+            InventoryForm inventory = new InventoryForm();
+            inventory.ShowDialog();
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            ReportsForm reports = new ReportsForm();
+            reports.ShowDialog();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            SettingsForm settings = new SettingsForm();
+            settings.ShowDialog();
         }
     }
 }

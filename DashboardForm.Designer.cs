@@ -117,6 +117,7 @@
             btnSettings.TabIndex = 9;
             btnSettings.Text = "Settings";
             btnSettings.UseVisualStyleBackColor = false;
+            btnSettings.Click += btnSettings_Click;
             // 
             // btnReports
             // 
@@ -130,6 +131,7 @@
             btnReports.TabIndex = 8;
             btnReports.Text = "Reports";
             btnReports.UseVisualStyleBackColor = false;
+            btnReports.Click += btnReports_Click;
             // 
             // btnInventory
             // 
@@ -143,6 +145,7 @@
             btnInventory.TabIndex = 7;
             btnInventory.Text = "Inventory";
             btnInventory.UseVisualStyleBackColor = false;
+            btnInventory.Click += btnInventory_Click;
             // 
             // btnSales
             // 
@@ -183,7 +186,7 @@
             btnProduct.TabIndex = 4;
             btnProduct.Text = "Product";
             btnProduct.UseVisualStyleBackColor = false;
-            this.btnProduct.Click += new System.EventHandler(this.btnProducts_Click);
+            btnProduct.Click += btnProducts_Click;
             // 
             // btnDashboard
             // 
